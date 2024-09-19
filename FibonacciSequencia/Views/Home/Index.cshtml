@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model FibonacciSequencia.Models.FibonacciModel
+<h1>Fibonacci Sequence</h1>
+<form asp-controller="Home" asp-action="Index" method="post">
+    <div>
+        <label>Digite um número:</label>
+        <input asp-for="Numero" />
+    </div>
+    <button type="submit">Verificar</button>
+</form>
+
+<p>@ViewBag.Message</p>
